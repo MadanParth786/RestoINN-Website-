@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+
+
+            <header>Login Page</header>
+            <form id="loginform">
+                <input type="email" placeholder="Enter your email/UserName" id="lemailid" name="lemail" oninvalid="this.setCustomValidity('Please Enter valid email')" oninput="setCustomValidity('')">
+                <i class="fa-solid fa-user"></i>
+                <input type="password" placeholder="Enter your password" id="lpassword" name="lpassword">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">Forgot password?</a>
+                <button type="submit" id="loginbtn">Login</button>
+            </form>
+            <div class="signup">
+                <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="registration form">
+            <header>Signup Page</header>
+
+
+            <form id="signupform">
+
+                <input type="name" placeholder="Enter your Name" id="nameid" name="nam">
+                <input type="email" placeholder="Enter your email" id="emailid" name="email">
+                <!-- <span class="error email-error">
+                    <i class="bs bs-error-circle error-icon"></i>
+                    <p class="error-text">Please enter Valid email</p>
+                </span> -->
+                <input type="password" placeholder="Create a password" id="password" name="password">
+                <input type="password" placeholder="Confirm your password" id="confirmPassword" name="confirmPassword">
+                <input type="Phone Number" placeholder="Enter your Phone Number" id="phoneid" name="phone">
+                <button type="submit">Signup</button>
+
+            </form>
+
+
+            <div class="signup">
+                <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+            </div>
+        </div>
+    </div>
+    <script src="maincode.js "></script>
+
+
+
+</body>
+
+</html>

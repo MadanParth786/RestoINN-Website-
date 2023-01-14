@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="addCart.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- header section starts      -->
+
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>restoINN</a>
+        <nav class="navbar">
+            <a class="active" href="restoinn.html#home">home</a>
+            <a href="restoinn.html#dishes">dishes</a>
+            <a href="restoinn.html#about">about</a>
+            <a href="restoinn.html#menu">menu</a>
+            <a href="restoinn.html#review">review</a>
+            <a href="restoinn.html#order">order</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart" id="addCart-icon"></a>
+            <a href="index1.html">log out</a>
+        </div>
+
+    </header>
+
+    <!-- header section ends-->
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <br><br><br>
+
+    <!-- Add to cart section starts  -->
+
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head">
+                <p>My Cart</p>
+            </div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+                <a href="orderconfirm.html" class="btn">Place Order</a>
+
+                <form name="order" action="restoinn.html">
+                    <input type="submit" value="Place Order" />
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Add to cart section ends -->
+    <script src="addCart.js"></script>
+
+</body>
+Delicious Food - Happy Customer!
+
+</html>
